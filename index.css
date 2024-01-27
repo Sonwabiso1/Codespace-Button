@@ -1,0 +1,80 @@
+h1{
+    position: top;
+    text-align: center;
+    color: #dba018;
+    font-size: 80px;
+    font-family: "Calibri",sans-serif;
+  }
+  body{
+    background: linear-gradient(0deg, #9e219a 0%, #0C19B4 100%);/* 
+    Background: Linear gradient with a horizontal direction (0deg),
+    transitioning from a deep magenta (#9e219a) at the starting point (0%),
+    to a rich blue (#0C19B4) at the ending point (100%).
+  */
+    height: 150vh;/*increased height to show the background color more*/
+  }
+  
+  .frame {
+    width: 40%;
+    margin: 70px auto;
+    text-align: center;
+  }
+  .custom-btn{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:#dba018;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        width: 130px;
+        height: 40px;
+        cursor:pointer;
+        margin:20px;
+  }
+  #btn-1{
+     background-color:#0b2487;
+  }
+  #btn-1:hover {
+        background: linear-gradient(0deg, #0003FF 0%, #027EFB 100%); /* Change color on hover */
+      }
+  
+  /*The purpose of this keyframe is to create a border every 0.25s so that it can give an impression of a loading button*/
+  
+  @keyframes borderChange {
+    0%, 100% {
+      border-left: 3px solid #3498db;
+    }
+    25% {
+      border-top: 3px solid #e74c3c;
+    }
+    50% {
+      border-right: 3px solid #2ecc71;
+    }
+    75% {
+      border-bottom: 3px solid #f39c12;
+    }
+  }
+  #btn-2{
+    background: linear-gradient(0deg,#aa18db 0%, #027EFB 100%);
+  }
+  @keyframes rotateButton {
+        0% {
+          transform: rotate(0deg); /* Initial rotation angle */
+        }
+        100% {
+          transform: rotate(360deg); /* Rotate to 360 degrees */
+        }
+      }
+  #btn-2:hover{
+     animation: borderChange 1s infinite; /* 1s duration, infinite loop */
+  }
+  #btn-3:hover{
+    background: linear-gradient(0deg, #9e219a 0%, #0C19B4 100%);
+    border-radius: 4px;
+    animation: rotateButton 3s linear infinite; /* 3s duration, linear timing function, infinite loop */
+  }
+  
+  
+  
+  
+  
